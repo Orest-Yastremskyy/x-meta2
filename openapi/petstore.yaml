@@ -17,7 +17,7 @@ info:
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 tags:
   - name: pet
-    description: Everything about your Pets
+    description: Everything about your BIPS
     externalDocs:
       description: Find out more
       url: 'http://swagger.io'
@@ -33,7 +33,7 @@ paths:
     post:
       tags:
         - pet
-      summary: Add a new pet to the store
+      summary: Add a new BIP to the store
       description: ''
       operationId: addPet
       responses:
@@ -47,6 +47,11 @@ paths:
             - 'read:pets'
       requestBody:
         $ref: '#/components/requestBodies/Pet'
+      x-meta:
+        seo:
+          title: "Testing x-meta"
+          description: "Megat x-meta test"
+          keywords: x-meta, test, plshelp
     put:
       tags:
         - pet

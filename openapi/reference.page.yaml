@@ -1,5 +1,6 @@
 type: reference-docs
 definitionId: petstore
+pagination: item
 settings:
   generateCodeSamples:
     languages:
