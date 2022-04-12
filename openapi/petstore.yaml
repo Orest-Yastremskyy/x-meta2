@@ -33,8 +33,8 @@ paths:
     post:
       tags:
         - pet
-      summary: Add a new BIP to the store
-      description: ''
+      summary: Add a new Pet to the store
+      description: 'Test description added'
       operationId: addPet
       responses:
         '200':
