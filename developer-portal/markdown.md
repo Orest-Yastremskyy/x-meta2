@@ -15,22 +15,18 @@ In the `developer-portal` folder, create a new file named `plain.md`.
 Copy/paste this content into the file (or write some of your own). And save the file.
 
 ```markdown
-# H1
+<?php
+TEST
+require __DIR__ . '/vendor/autoload.php';
 
-Body text.
+use GuzzleHttp\Client;
+use GuzzleHttp\\Client;
+$token = '<REVAI_ACCESS_TOKEN>';
 
-## H2
-
-Body text.
-
-### H3
-
-Body text.
-
-Notice the URL in the address bar is localhost:3000/developer-portal/plain.
-The file name maps to the URL path.
-
-[take me back to the markdown training exercise](markdown.md)
+$client = new Client([
+    'base_uri' => 'https://api.rev.ai/speechtotext/v1',
+    'headers' => ['Authorization' => "Bearer $token"]
+]);
 ```
 
 So now you've create a page, but how do you access it?
