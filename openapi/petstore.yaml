@@ -34,7 +34,8 @@ paths:
       tags:
         - pet
       summary: Add a new Pet to the store
-      description: 'Test description added'
+      description: |
+        ### Test description added (Add a new Pet)
       operationId: addPet
       responses:
         '200':
